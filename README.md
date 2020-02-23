@@ -3,7 +3,7 @@
 
 Part1: 
 
-I outputs and save all the files' contents in a one string corpus, and in a dictionary in the same loop. The dictionary contains all the files as keys, with the file content's as the values. The count all the occurrences of the words in the corpus to determine which words to include in the dataframe, if their count is more than n times. Then I iterate through the dict one by own using the index position of the files in data frame: [position,"classes"]+"/"+B.loc[position,"files"]], and count the occurrence of each word in the given file.  The data is lowered, and I have not removed punctuation and numbers, so non-alphabetic characters will appear in the data frame. 
+I output and save all the files' contents in a one string corpus, and in a dictionary in the same loop. The dictionary contains all the files as keys, with the file content's as the values. The count all the occurrences of the words in the corpus to determine which words to include in the dataframe, if their count is more than n times. Then I iterate through the dict one by own using the index position of the files in data frame: [position,"classes"]+"/"+B.loc[position,"files"]], and count the occurrence of each word in the given file.  The data is lowered, and I have not removed punctuation and numbers, so non-alphabetic characters will appear in the data frame. 
 
 
 Part2 : 
@@ -17,7 +17,7 @@ Step1: a copy of the data frame without the files and the classes. Step2: the le
 
 
 Part4: 
-The frequency of the top used words has changed dramatically, with more words that has a remarkable difference in representation from one class to the other. I assume this change is due to the relative ratio that that tf-idf points, represented by narrower numbers or narrower classification of 0 or above 0. 
+The frequency of the top used words has changed dramatically, with more words that has a remarkable difference in representation from one class to the other. I assume this change is due to the relative ratio that that tf-idf points out, represented by narrower numbers or narrower classification of number of 0 or above 0. 
 
 
 Part Bosun- classiy: 
