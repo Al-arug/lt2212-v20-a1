@@ -38,13 +38,12 @@ def part1_load(folder1, folder2, n=1):
                 counts.append(c.count(i[0]))
             B[i[0]]=[int(i) for i in counts]
 
-    return B # DUMMY RETURN
+    return B 
 df=loader_data("crude","grain",1000)
 def part2_vis(df,m):
-    # DO NOT CHANGE
+  
     assert isinstance(df, pd.DataFrame)
-    # DO NOT CHANGE
-    assert isinstance(df, pd.DataFrame)
+
     # a copy of the dataframe using iloc, excluding the column of the filename
     R=df.iloc[:,1:]
     R= R.groupby(["classes"]).sum()
@@ -64,7 +63,7 @@ def part3_tfidf(df):
     f=df.iloc[:,:2]      #files and classes
     c=pd.concat([f,b],axis=1)  #returning classes and files to the new tf-idf dataframe
     
-    return c #DUMMY RETURN
+    return c 
 def classifier_data(T):
     
     X=T.iloc[:,2:]
@@ -73,5 +72,5 @@ def classifier_data(T):
     logreg = LogisticRegression()
     logreg.fit(X_train, y_train)
     y_pred_class= logreg.predict(X_test)
-    v=metrics.accuracy_score(y_test, y_pred_class)
-    return v
+    
+    return metrics.accuracy_score(y_test, y_pred_class)
