@@ -49,7 +49,7 @@ def part2_vis(df,m):
     R= R.groupby(["classes"]).sum()
     i= R.append(R.agg(["sum"]))
     h=i.T.sort_values("sum",ascending=False).T
-    t=h.iloc[: , 0:m]             #sorted dataframe exluding the total raw and including top m
+    t=h.iloc[:-1, 0:m]             #sorted dataframe exluding the total raw and including top m
     
     return t.T.plot(kind="bar")
 
