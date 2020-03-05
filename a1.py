@@ -8,7 +8,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
 from sklearn import metrics
 
-def part1_load(folder1, folder2, n=1):
+def part1_load(folder1, folder2, n=500):
     allfiles = glob("{}/*.txt".format(folder1)) + glob("{}/*.txt".format(folder2))
     
     #spliting the file names for the first two columns
