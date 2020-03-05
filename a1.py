@@ -39,7 +39,7 @@ def part1_load(folder1, folder2, n=1):
             B[i[0]]=[int(i) for i in counts]
 
     return B 
-df=loader_data("crude","grain",1000)
+
 def part2_vis(df,m):
   
     assert isinstance(df, pd.DataFrame)
